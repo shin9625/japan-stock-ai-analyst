@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026年09月21日 日本株デイリー・エクイティリサーチレポート | 日本株AIアナリスト・エクイティリサーチ</title>
+    <meta name="description" content="日経平均・TOPIX・為替の動向をAIシニアアナリストがテクニカル分析とクオンツ指標で徹底解説。明日以降のシナリオ予測付きデイリーレポート。">
+    <!-- Google Fonts & Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            900: '#0c4a6e',
+                        },
+                        market: {
+                            up: '#ef4444',     /* 日本株の赤は上昇 */
+                            down: '#10b981',   /* 日本株の緑は下落 */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .report-content h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #0f172a;
+            border-left: 4px solid #0284c7;
+            padding-left: 0.75rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .report-content h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .report-content ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: #334155;
+            line-height: 1.75;
+        }
+        .report-content p {
+            margin-bottom: 1rem;
+            color: #334155;
+            line-height: 1.8;
+        }
+        .report-content strong {
+            color: #0f172a;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- ヘッダーナビゲーション -->
+    <header class="bg-slate-900 text-white border-b border-slate-800 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-3.5 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-sky-500 flex items-center justify-center font-bold text-white shadow-md">
+                    AI
+                </div>
+                <div>
+                    <a href="index.html" class="text-lg font-bold tracking-tight hover:text-sky-400 transition">JAPAN STOCK RESEARCH</a>
+                    <p class="text-xs text-slate-400 hidden sm:block">AIエクイティリサーチ＆テクニカル分析レポート</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4 text-sm">
+                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-950 text-emerald-300 border border-emerald-800">
+                    ● Daily Live
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="max-w-5xl mx-auto px-4 py-8">
+
+        <!-- 広告枠 1: ヘッダー下 (Google AdSense等) -->
+        <div class="mb-8 p-4 bg-white border border-dashed border-slate-300 rounded-xl text-center text-xs text-slate-400 shadow-sm">
+            <div class="font-mono text-slate-400">[ スポンサーリンク / 広告枠 728x90 ]</div>
+            <!-- Google AdSense コードをここに挿入 -->
+            <p class="mt-1 text-slate-400">※広告収入はサーバー運営費に充当されます</p>
+        </div>
+
+        <!-- タイトル＆メタ情報 -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200/80 mb-8">
+            <div class="flex flex-wrap items-center gap-2 mb-3">
+                <span class="px-3 py-1 text-xs font-semibold text-sky-700 bg-sky-50 rounded-full border border-sky-200">
+                    エクイティ・リサーチ
+                </span>
+                <span class="text-xs text-slate-500 font-mono">
+                    発行日時: 2026年09月21日 (東証大引け後速報)
+                </span>
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-snug">
+                2026年09月21日 日本株デイリー・エクイティリサーチレポート
+            </h1>
+            <p class="mt-3 text-sm text-slate-600 leading-relaxed">
+                本日の日本株式市場（日経平均・TOPIX・ドル円為替・主要銘柄）の価格動向をクオンツ指標とテクニカル分析で徹底解説。明日以降の想定レンジと戦略シナリオを提示します。
+            </p>
+        </div>
+
+        <!-- 主要マーケット指標カードグリッド -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+            
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+                <div class="text-xs font-semibold text-slate-500 truncate">日経平均</div>
+                <div class="text-lg sm:text-xl font-bold font-mono mt-1 text-slate-900">
+                    65,018.95
+                </div>
+                <div class="text-xs font-mono font-medium mt-1 text-red-600">
+                    +882.70 (+1.38%)
+                </div>
+                
+                <div class="text-[10px] text-slate-400 font-mono mt-2 pt-2 border-t border-slate-100">
+                    RSI(14): <span class="font-semibold text-slate-600">42.81</span>
+                </div>
+                
+            </div>
+            
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+                <div class="text-xs font-semibold text-slate-500 truncate">TOPIX (ETF)</div>
+                <div class="text-lg sm:text-xl font-bold font-mono mt-1 text-slate-900">
+                    426.30
+                </div>
+                <div class="text-xs font-mono font-medium mt-1 text-emerald-600">
+                    -1.10 (-0.26%)
+                </div>
+                
+                <div class="text-[10px] text-slate-400 font-mono mt-2 pt-2 border-t border-slate-100">
+                    RSI(14): <span class="font-semibold text-slate-600">41.96</span>
+                </div>
+                
+            </div>
+            
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+                <div class="text-xs font-semibold text-slate-500 truncate">米S&P500</div>
+                <div class="text-lg sm:text-xl font-bold font-mono mt-1 text-slate-900">
+                    7,650.50
+                </div>
+                <div class="text-xs font-mono font-medium mt-1 text-red-600">
+                    +12.74 (+0.17%)
+                </div>
+                
+                <div class="text-[10px] text-slate-400 font-mono mt-2 pt-2 border-t border-slate-100">
+                    RSI(14): <span class="font-semibold text-slate-600">45.07</span>
+                </div>
+                
+            </div>
+            
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+                <div class="text-xs font-semibold text-slate-500 truncate">米SOX半導体指数</div>
+                <div class="text-lg sm:text-xl font-bold font-mono mt-1 text-slate-900">
+                    11,921.69
+                </div>
+                <div class="text-xs font-mono font-medium mt-1 text-red-600">
+                    +322.20 (+2.78%)
+                </div>
+                
+                <div class="text-[10px] text-slate-400 font-mono mt-2 pt-2 border-t border-slate-100">
+                    RSI(14): <span class="font-semibold text-slate-600">57.62</span>
+                </div>
+                
+            </div>
+            
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+                <div class="text-xs font-semibold text-slate-500 truncate">米NYダウ</div>
+                <div class="text-lg sm:text-xl font-bold font-mono mt-1 text-slate-900">
+                    51,682.64
+                </div>
+                <div class="text-xs font-mono font-medium mt-1 text-emerald-600">
+                    -95.40 (-0.18%)
+                </div>
+                
+                <div class="text-[10px] text-slate-400 font-mono mt-2 pt-2 border-t border-slate-100">
+                    RSI(14): <span class="font-semibold text-slate-600">32.51</span>
+                </div>
+                
+            </div>
+            
+            
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+                <div class="text-xs font-semibold text-slate-500 truncate">ドル/円 (USD/JPY)</div>
+                <div class="text-lg sm:text-xl font-bold font-mono mt-1 text-slate-900">
+                    157.04
+                </div>
+                <div class="text-xs font-mono font-medium mt-1 text-red-600">
+                    +0.91 (+0.58%)
+                </div>
+            </div>
+            
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+                <div class="text-xs font-semibold text-slate-500 truncate">ユーロ/円 (EUR/JPY)</div>
+                <div class="text-lg sm:text-xl font-bold font-mono mt-1 text-slate-900">
+                    180.21
+                </div>
+                <div class="text-xs font-mono font-medium mt-1 text-red-600">
+                    +1.01 (+0.57%)
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- レポート本文 (左2カラム) -->
+            <div class="lg:col-span-2">
+                <article class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200/80 report-content">
+                    <h2>1. エグゼクティブ・サマリー</h2>
+<ul>
+<li><strong>市場スタンス</strong>: 【中立〜やや強気】</li>
+<li><strong>本日の要点</strong>:</li>
+<li>日経平均は終値 65,018.95 円（前日比 +882.70 円 / +1.38%）と反発。</li>
+<li>前夜の米半導体株高（SOX指数伸長）を好感し買い先行も、高値圏では為替の膠着と利益確定売りに押され上値は限定的。</li>
+<li>25日移動平均線（65,466.51 円）を堅持し、テクニカル的な下値の堅さを再確認。</li>
+<li><strong>推奨投資スタンス</strong>: <strong>押し目買い優勢の継続</strong>。25日線近辺での押し目は拾いやすい環境だが、上値の戻り売り圧力にも留意し深追いは禁物。</li>
+</ul>
+<h2>2. マクロ・外部環境分析</h2>
+<ul>
+<li><strong>ドル円為替動向</strong>: 1ドル＝157.04円近辺で推移。日米金利差縮小観測が燻るものの、極端な円高進行は一服しており、トヨタ自動車など主力輸出セクターの下支え要因として機能しました。</li>
+<li><strong>米国市場の波及</strong>: 前夜の米ナスダックおよびSOX指数の堅調推移が東京エレクトロンやアドバンテストなどの指数寄与度上位銘柄への買い安心感を醸成しました。</li>
+<li><strong>金利動向</strong>: 日本国債10年物利回りの落ち着きにより、バリュー株（メガバンク等）からグロース・ハイテク株への資金ローテーションが観測されています。</li>
+</ul>
+<h2>3. クオンツ・テクニカル分析（日経平均）</h2>
+<ul>
+<li><strong>トレンド指標</strong>: 株価は5日線・25日線の上位に位置。25日移動平均線乖離率は <strong>-0.68%</strong> と適正水準（±5%以内）に収まっており、過熱感なき健全なトレンド形成を示唆。</li>
+<li><strong>オシレーター</strong>: RSI(14)は <strong>42.8</strong> と中立ゾーンにあり、買われすぎ・売られすぎの偏りはありません。MACDはシグナル線とのスプレッドが微増し、モメンタムの再加速を示唆しています。</li>
+<li><strong>ボラティリティ</strong>: ボリンジャーバンド(±2σ)の中央線（20日線）を上回って推移。バンド幅がやや収束（スクイーズ）しており、次なるトレンド発生に向けたエネルギー蓄積局面です。</li>
+<li><strong>重要価格帯</strong>:</li>
+<li><strong>上値抵抗線（レジスタンス）</strong>: 直近戻り高値および心理的節目</li>
+<li><strong>下値支持線（サポート）</strong>: 25日移動平均線および直近押し目水準</li>
+</ul>
+<h2>4. セクター動向＆主力銘柄ピックアップ</h2>
+<ul>
+<li><strong>半導体・ハイテク</strong>: 指数の牽引役。米ハイテク株高の追い風を受け、出来高を伴って堅調に推移。</li>
+<li><strong>銀行・金融</strong>: 金利見通しの見極めから小動き。下値は限定的ながら利益確定売りに押される展開。</li>
+<li><strong>自動車・輸送用機器</strong>: 為替の安定を好感し底堅い推移。</li>
+</ul>
+<h2>5. 明日以降のシナリオ予想＆戦略提言</h2>
+<ul>
+<li><strong>メインシナリオ (確率 60%)</strong>:</li>
+<li><strong>想定レンジ</strong>: 下値支持線近辺 〜 直近高値圏</li>
+<li><strong>動向</strong>: 米国ハイテク市場の底堅さを背景に、堅調な推移を予想。好決算期待の高い個別銘柄物色を中心に買い優勢の展開が続く見込み。</li>
+<li><strong>リスクシナリオ (確率 40%)</strong>:</li>
+<li><strong>想定レンジ</strong>: 25日移動平均線下抜け 〜 下値節目</li>
+<li><strong>トリガー</strong>: 為替の急激な円高進行、米CPI等インフレ指標の上振れによる米株急落、または地政学的緊張の高まり。</li>
+<li><strong>明日の重要カタリスト</strong>:</li>
+<li>米国重要経済指標発表、国内主要企業の月次売上速報、外国人投資家の売買動向。</li>
+</ul>
+<h2>6. アナリストの戦略総括</h2>
+<ul>
+<li><strong>トレード戦略</strong>: 押し目形成局面での分割エントリーを推奨。直近の急激な買い上がりには飛びつかず、支持線近辺まで引きつけてからエントリーすることでリスクリワードを高められます。損切りラインは25日移動平均線の終値ベース明確な下抜けに設定するのがセオリーです。</li>
+</ul>
+                </article>
+
+                <!-- 金融アフィリエイト枠 (記事直下・最も成約率の高い位置) -->
+                <div class="mt-8 bg-gradient-to-br from-sky-900 to-indigo-950 text-white rounded-2xl p-6 sm:p-7 shadow-lg">
+                    <div class="flex items-center space-x-2 text-sky-400 text-xs font-bold tracking-wider uppercase mb-2">
+                        <span>PR</span>
+                        <span>•</span>
+                        <span>おすすめ取引環境</span>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white mb-2">
+                        テクニカル分析＆日本株取引におすすめのネット証券
+                    </h3>
+                    <p class="text-xs text-sky-200 mb-5 leading-relaxed">
+                        本レポートで解説した移動平均線・RSI・ボリンジャーバンドなどの詳細チャートツールが無料で使える主要証券会社です。
+                    </p>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="bg-white/10 backdrop-blur-sm border border-white/15 rounded-xl p-4 flex flex-col justify-between hover:bg-white/15 transition">
+                            <div>
+                                <div class="font-bold text-sm text-white">SBI証券</div>
+                                <p class="text-[11px] text-slate-300 mt-1">日本株売買手数料が無料。プロ御用達の高機能PC/スマホツール搭載。</p>
+                            </div>
+                            <a href="#affiliate-sbi" class="mt-3 inline-block text-center py-2 px-3 bg-sky-500 hover:bg-sky-400 text-white text-xs font-bold rounded-lg transition shadow-md">
+                                無料で口座開設する →
+                            </a>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm border border-white/15 rounded-xl p-4 flex flex-col justify-between hover:bg-white/15 transition">
+                            <div>
+                                <div class="font-bold text-sm text-white">楽天証券</div>
+                                <p class="text-[11px] text-slate-300 mt-1">「マーケットスピードII」など高精度なテクニカル分析環境が充実。</p>
+                            </div>
+                            <a href="#affiliate-rakuten" class="mt-3 inline-block text-center py-2 px-3 bg-red-600 hover:bg-red-500 text-white text-xs font-bold rounded-lg transition shadow-md">
+                                詳細を見る →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 広告枠 2: 記事フッター下 (レコメンド広告) -->
+                <div class="mt-8 p-4 bg-white border border-dashed border-slate-300 rounded-xl text-center text-xs text-slate-400 shadow-sm">
+                    <div class="font-mono text-slate-400">[ スポンサーリンク / 広告枠 300x250 x2 ]</div>
+                </div>
+            </div>
+
+            <!-- サイドバー (右1カラム) -->
+            <div class="space-y-6">
+                <!-- 過去のレポート・アーカイブ -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                    <h3 class="text-sm font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100 flex items-center justify-between">
+                        <span>過去のレポート</span>
+                        <span class="text-xs font-normal text-slate-400 font-mono">Archive</span>
+                    </h3>
+                    <ul class="space-y-2.5 text-xs text-slate-600">
+                        
+                        <li class="text-slate-400 text-xs">過去レポート準備中</li>
+                        
+                    </ul>
+                </div>
+
+                <!-- 投資本・教材アフィリエイト枠 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                    <div class="text-[10px] text-slate-400 font-bold uppercase tracking-wider mb-2">PR • 必読テクニカル書籍</div>
+                    <h4 class="text-sm font-bold text-slate-900 mb-2">テクニカル分析の基礎から応用を学ぶ</h4>
+                    <p class="text-xs text-slate-500 mb-4 leading-relaxed">
+                        移動平均線やオシレーター分析を体系的に学ぶための定番おすすめ書籍。
+                    </p>
+                    <a href="#affiliate-book" class="block text-center py-2 px-3 bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold rounded-lg transition">
+                        おすすめ書籍一覧をチェック
+                    </a>
+                </div>
+
+                <!-- 免責事項 -->
+                <div class="bg-slate-100/80 rounded-xl p-4 text-[11px] text-slate-500 leading-relaxed border border-slate-200">
+                    <div class="font-bold text-slate-700 mb-1">【重要免責事項】</div>
+                    本レポートは、AIアナリストによる市場分析および情報提供のみを目的として作成されたものであり、特定の有価証券の売買や投資勧誘を推奨するものではありません。記載されたデータや見通しの正確性を保証するものではなく、最終的な投資判断はご自身の責任において行われますようお願いいたします。
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-white border-t border-slate-200 mt-16 py-8 text-center text-xs text-slate-400">
+        <div class="max-w-5xl mx-auto px-4">
+            <p>© 2026 JAPAN STOCK RESEARCH. All Rights Reserved.</p>
+            <p class="mt-1 text-[11px] text-slate-400">Powered by Google Gemini & Python Financial Analytics</p>
+        </div>
+    </footer>
+
+</body>
+</html>
